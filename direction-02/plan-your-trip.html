@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plan a Custom Surf Trip — Tropical Surf Expeditions</title>
+<meta name="description" content="Tell us roughly when you're free and how you surf. We'll come back with what's possible — no obligation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500&family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .plan-cols{display:grid;grid-template-columns:7fr 5fr;gap:var(--s12);align-items:start}
+  @media (max-width:900px){.plan-cols{grid-template-columns:1fr;gap:var(--s9)}}
+</style>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="../review.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<aside class="rail" aria-hidden="true">
+  <span class="lbl">Custom surf trips</span>
+  <span class="soc">
+    <a href="#" aria-label="Instagram" class="tbc" title="Awaiting confirmation from Jobson"></a>
+    <a href="#" aria-label="WhatsApp" class="tbc" title="Awaiting confirmation from Jobson"></a>
+    <a href="mailto:hello@example.com" aria-label="Email" class="tbc" title="Awaiting confirmation from Jobson"></a>
+  </span>
+</aside>
+
+<header class="nav solid">
+  <a class="lockup" href="index.html" aria-label="Tropical Surf Expeditions — home">
+    <span class="wm">Tropical Surf</span><span class="sub">Expeditions</span>
+  </a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  <nav class="nav-links">
+    <a href="where-we-go.html">Where We Go</a>
+    <a href="jobson.html">Jobson</a>
+    <a class="btn" href="plan-your-trip.html" aria-current="page">Plan Your Trip</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- No film on this page. A form on paper converts better than a form on a
+       photograph (visual-direction-02.html §06, Block 06). -->
+  <section class="hero-p bleed">
+    <div class="hold">
+      <p class="eyebrow rv">Plan your trip</p>
+      <h1 class="h-xl rv" data-rv-i="1">Start with roughly.</h1>
+      <p class="body rv" data-rv-i="2" style="margin-top:var(--s6);max-width:46ch">You don't need dates, a
+        destination or a budget to send this. Roughly when, roughly how you surf, and we'll take it from there.</p>
+    </div>
+  </section>
+
+  <section class="sec bleed" style="padding-top:var(--s9)">
+    <div class="hold">
+      <div class="plan-cols">
+
+        <div>
+          <!-- NOTE: no backend is wired. The form validates and shows its thank-you state so the
+               flow can be reviewed; connect it to email or a form service before launch. -->
+          <form data-demo data-thanks="plan-thanks" novalidate>
+            <div class="form-grid">
+              <div class="fgroup">
+                <input id="name" name="name" type="text" placeholder=" " required>
+                <label for="name">Your name</label>
+              </div>
+              <div class="fgroup">
+                <input id="email" name="email" type="email" placeholder=" " required>
+                <label for="email">Email</label>
+              </div>
+              <div class="fgroup">
+                <select id="where" name="where">
+                  <option>Not sure yet</option>
+                  <option>Portugal</option>
+                  <option>Brazil</option>
+                  <option>Spain</option>
+                </select>
+                <label for="where">Where are you thinking?</label>
+              </div>
+              <div class="fgroup">
+                <input id="when" name="when" type="text" placeholder=" ">
+                <label for="when">Roughly when?</label>
+              </div>
+              <div class="fgroup">
+                <select id="people" name="people">
+                  <option>Just me</option>
+                  <option>Two of us</option>
+                  <option>Three or four</option>
+                  <option>More than four</option>
+                </select>
+                <label for="people">How many of you?</label>
+              </div>
+              <div class="fgroup">
+                <select id="level" name="level">
+                  <option>Never surfed</option>
+                  <option>Beginner</option>
+                  <option>Improving</option>
+                  <option>Confident</option>
+                </select>
+                <label for="level">How's your surfing?</label>
+              </div>
+              <div class="fgroup full">
+                <textarea id="more" name="more" placeholder=" "></textarea>
+                <label for="more">Anything that would make the trip for you?</label>
+              </div>
+              <div class="full">
+                <label class="consent">
+                  <input type="checkbox" name="consent" required>
+                  <span>I'm happy to be contacted about this enquiry.</span>
+                </label>
+                <button class="btn btn-solid" type="submit">Send it</button>
+                <p class="form-err" role="alert"></p>
+                <p class="form-note">We'll only use this to answer you. Nothing else, and no list.
+                  <a href="privacy.html">Privacy</a></p>
+              </div>
+            </div>
+          </form>
+          <div class="thanks" id="plan-thanks">
+            <h2 class="h-md">Got it.</h2>
+            <p class="body" style="margin-top:var(--s5)">Jobson will come back to you within
+              <span class="tbc" title="Awaiting confirmation from Jobson">a day or two</span>. If it's urgent,
+              WhatsApp is faster.</p>
+          </div>
+        </div>
+
+        <aside>
+          <p class="eyebrow rv">What happens next</p>
+          <div class="rv" data-rv-i="1">
+            <ul class="facts">
+              <li><span class="k">01</span><span class="v"><strong style="font-weight:400">Jobson reads it.</strong>
+                Usually within <span class="tbc" title="Awaiting confirmation from Jobson">a day or two</span>.
+                It's him, not an assistant.</span></li>
+              <li><span class="k">02</span><span class="v"><strong style="font-weight:400">A short call.</strong>
+                Twenty minutes, whenever suits, to work out what you actually want from the week.</span></li>
+              <li><span class="k">03</span><span class="v"><strong style="font-weight:400">A plan and a price.</strong>
+                Where, when, where you'd stay and what it costs. Nothing is booked before that.</span></li>
+            </ul>
+          </div>
+
+          <div class="rv" data-rv-i="2" style="margin-top:var(--s9)">
+            <p class="eyebrow">Or skip the form</p>
+            <ul class="facts">
+              <li><span class="k">Email</span><span class="v"><a class="tbc" href="mailto:hello@example.com" title="Awaiting confirmation from Jobson">email address</a></span></li>
+              <li><span class="k">WhatsApp</span><span class="v"><a class="tbc" href="#" title="Awaiting confirmation from Jobson">number</a></span></li>
+              <li><span class="k">Instagram</span><span class="v"><a class="tbc" href="#" title="Awaiting confirmation from Jobson">handle</a></span></li>
+            </ul>
+            <p class="body-sm" style="margin-top:var(--s6)">
+              <span class="tbc" title="Awaiting confirmation from Jobson">Portuguese and English</span> both fine.</p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <a class="lockup" href="index.html">
+    <span class="wm">Tropical Surf</span><span class="sub">Expeditions</span>
+  </a>
+  <nav class="fnav">
+    <a href="where-we-go.html">Where We Go</a>
+    <a href="jobson.html">Jobson</a>
+    <a href="plan-your-trip.html">Plan Your Trip</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+  <div class="soc">
+    <a href="#" aria-label="Instagram" class="tbc" title="Awaiting confirmation from Jobson"></a>
+    <a href="#" aria-label="WhatsApp" class="tbc" title="Awaiting confirmation from Jobson"></a>
+    <a href="mailto:hello@example.com" aria-label="Email" class="tbc" title="Awaiting confirmation from Jobson"></a>
+  </div>
+  <p class="desc">Custom surf trips to Portugal, Brazil and Spain, planned and guided by Jobson. Based in
+    <span class="tbc" title="Awaiting confirmation from Jobson">Portugal</span>, and in Brazil part of the year.</p>
+  <p class="fine">© 2026 Tropical Surf Expeditions · By arrangement</p>
+</footer>
+
+<script src="js/site.js"></script>
+<div class="reviewbar">
+  <a class="rb-home" href="../index.html" title="Back to the menu">Compare</a>
+  <span class="rb-now">Direction 02 · Crossing</span>
+  <a class="rb-alt" href="../direction-01/plan-your-trip.html">Switch to 01</a>
+</div>
+<script src="../review.js"></script>
+</body>
+</html>
